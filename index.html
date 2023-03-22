@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hitung BMI</title>
+    
+</head>
+<body>
+      <div class="wrapper" style="background-image: url('4853433.jpg');">
+        <div class="left">
+            <h1>BMI Calculator</h1>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat, Bagaimana denganmu?</p>
+                <p>Yuk, hitung sekarang di kalkulator BMI!</p>
+             
+            <div class="card">
+              <div class="form">                
+                <div class="gender">
+                  <strong>Jenis Kelamin</strong>
+                  <label for="container">
+                    <input type="radio" name="radio" id="m">
+                    <p class="text">Male</p>
+                  </label>
+                  <label for="container">
+                      <input type="radio" name="radio" id="f" ><p class="text">Female</p>
+                    </label>
+                </div>
+                <div class="age">
+                  <label for="height">Umur</label>
+                  <input type="text" class="text-input" id="age" autocomplete="off" required/>
+                </div>
+           
+
+              <div class="containerHW">
+                <div class="inputH">
+                  <label for="height">Tinggi(cm)</label>
+                  <input type="number" id="height" required>
+                </div>
+
+                <div class="inputW">
+                  <label for="weight">Berat(kg)</label>
+                  <input type="number" id="weight" required>
+                </div>
+                <div class="btton">
+                  <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+                  <button class="calculate" id="reset" value="reset">Reset</button>
+                </div></div>
+              </div>
+            <div>
+            </div>
+                <p>Keunggulan fitur</p>
+                      <ol>
+                          <li>Menghitung berat badan</li>
+                          <li>Menentukan kategori berat badan ideal atau tidak</li>
+                          <li>Mempersiapkan program penurunan berat badan</li>
+                      </ol>  
+                      <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) 
+                          dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                      </p>
+                      <p style="justify-content: center;">Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) 
+                          dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter)atau BMI = Kg/M2.
+                      </p>    
+              </div>
+        </div>
+
+        <div class="right">
+          <div class="result">
+
+            <h1>Hasil</h1>
+            <div id="result">00.00</div>
+
+            <p class="comment"></p>
+
+          </div>
+          <p></p>
+          <p style="justify-content: center;">Cara Memeroleh Berat Badan Ideal Untuk mendapatkan bobot tubuh yang proporsioanl ada beberapa cara yang bisa Anda lakukan. Berikut ini cara mendapatkan berat badan ideal: </p>
+          <ol>
+            <li>Konsumsi makanan cukup nutrisi Berat badan ideal bukan hanya seputar angka dalam satuan kilogram saja, tapi kandungan nutrisi yang tercukupi juga sangat penting. Untuk itu, pastikan nutrisi tubuh Anda. Konsumsi makanan bergizi seimbang mulai dari karbohidrat, protein, vitamin, dan jangan lupa juga minuman yang sehat.</li>
+            <li>Olahraga dengan rutin Selain membantu tubuh untuk tetap fit, olahraga yang rutin juga bisa menjadi salah satu cara mendapatkan berat badan ideal. Jika kini berat badan sudah terlalu gemuk, Anda bisa melakukan serangkaian program olahraga yang bisa membantu menurunkan berat badan sampai ke angka normal atau ideal. </li>
+            <li>Menambah asupan kalori Jika keluhan Anda saat ini adalah tubuh yang terlalu kurus, maka salah satu upaya agar berat badan Anda naik hingga menjadi ideal bisa dengan menambahkan kalori. Beberapa makanan sehat yang bisa menambah kalori, di antranya susu, keju, krim, dan beberapa makanan lain sesuai anjuran dokter gizi Anda.</li>
+        </ol>     
+            
+            
+               <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga. 
+                Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat bandan hingga batas normal.</p>
+
+          <div class="konsul-gizi">            
+            <button><a href="https://www.alodokter.com/informasi-seputar-konsultasi-gizi-dan-pola-makan">Konsultasi Ahli Gizi Via Aplikasi</a></button>
+            <button><a href="https://www.alodokter.com/cari-dokter">Registrasi Online Ahli Gizi</a></button>
+
+              <p style="justify-content: center;">BMI tidak sepunuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang.
+              Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhwatiran anda terkait dengan berat badan anda.</p>    
+          </div>
+        </div>
+
+    </div>
+        </div>
+      </div>
+    </div>
+   
+<script src="script.js"></script>
+</div>
+</body>
+</html>
