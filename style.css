@@ -6,23 +6,37 @@
       width: 50%;
       height: 100vh;
     }
-    .card .form{
-      display: block;
-    text-align: -webkit-center;
-    justify-content: center;
+
+    .left{
+      align-items: center;
+      padding: 50px;
+    }
+    .right{
+      align-items: center;
+      padding-right: 20px;
+    }
+    .card{
+    display: flex;
+    text-align:end;
     background-color: rgb(231, 234, 250);
-    width: fit-content;
-    height: fit-content;
+    padding: 20px 20px;
+    width: auto;
+    height: auto;
     }
 
-  h1 {
-    color: rgb(0, 0, 0, 0.7);
-    font-weight: bold;
-    font-size: 36px;
-    padding: 30px 0;
-    
+.button {
+  font-family: "Nunito", sans-serif;
+    color: #db7171;
+    }
+ 
+  button.reset {
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    background: rgb(97,138,254,1);
+    font-size: 16px;
+    border-radius: 7px;
   }
-
   button.calculate {
     cursor: pointer;
     font-family: "Nunito", sans-serif;
@@ -30,11 +44,8 @@
     background: rgb(97,138,254,1);
     font-size: 16px;
     border-radius: 7px;
-    padding:0%;
-    width: 50%;
-  
   }
-  button.calculate, reset {
+  button.reset .calculate {
     background: #0044ff;
   }
 
@@ -71,25 +82,6 @@
     padding: 5px;
 }
 
-.footer {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 10px 15px
-}
-
-.footer-text {
-    text-decoration: none;
-    color: rgba(40, 40, 40, 0.8);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    font-size: 14px;
-    transition: all 0.5;
-}
-
-.footer-text:hover {
-    color: rgba(40, 40, 40, 1);
-}
 
 .gender {
   display: flex;
@@ -154,6 +146,11 @@
   .gender .container input:checked ~ .checkmark:after {
     display: block;
   }
-  
- 
+
+.footer {
+  background-color: rgb(194, 227, 243);
+  /* Pusatkan secara horizontal*/
+  margin: 0 auto;
+  text-align: center;
+}
   
